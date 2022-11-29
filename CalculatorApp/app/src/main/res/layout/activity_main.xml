@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    >
+
+
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/first_number"
+        android:textColorHint="#757575"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/operator"
+        android:layout_below="@id/firstNumber"
+        android:textColorHint="#757575"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/second_number"
+        android:layout_below="@id/operator"
+        android:textColorHint="#757575"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondNumber"
+        android:layout_marginTop="30dp"
+        android:id="@+id/answer"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearParent"
+        android:layout_below="@id/secondNumber"
+        android:layout_marginTop="60dp"
+        >
+
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:onClick="calculate"
+            />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textSize="16sp"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
